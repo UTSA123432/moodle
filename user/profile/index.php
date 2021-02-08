@@ -237,7 +237,6 @@ function profile_field_icons($field) {
     $stredit     = get_string('edit');
 
     $fieldcount = $DB->count_records('user_info_field', array('categoryid' => $field->categoryid));
-    $datacount  = $DB->count_records('user_info_data', array('fieldid' => $field->id));
 
     // Edit.
     $editstr = '<a title="'.$stredit.'" href="index.php?id='.$field->id.'&amp;action=editfield">';
